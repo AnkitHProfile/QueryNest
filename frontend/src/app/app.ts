@@ -17,7 +17,20 @@ export class App {
   private http = inject(HttpClient);
   message = signal('Click the button to check the backend.');
 
-  checkBackend(){
-    this.message.set('Checking...');
-  }
+  checkBackend() {
+  this.message.set('Checking...');
+
+  this.http.get<HealthResponse>('/api/health').subscribe({
+    next: (response) => {
+      this.message.set(response.message);
+    },
+    error: (error) => {
+      console.error('Backend request failed:', error);
+
+      this.message.set(
+        'Could not reach the backend. Check the server and proxy.'
+      );
+    },
+  });
+}
 }
