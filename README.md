@@ -43,13 +43,13 @@ The hub will retrieve the relevant records and present an answer with references
 
 ## Development Roadmap
 
-- [ ] Build the Angular interface.
-- [ ] Create and connect the Node.js API.
-- [ ] Implement spreadsheet upload and preview.
-- [ ] Add database storage and keyword search.
-- [ ] Integrate AI answers with source references.
-- [ ] Extend support to documents.
-- [ ] Add authentication and file access permissions.
+- Build the Angular interface.
+- Create and connect the Node.js API.
+- Implement spreadsheet upload and preview.
+- Add database storage and keyword search.
+- Integrate AI answers with source references.
+- Extend support to documents.
+- Add authentication and file access permissions.
 
 ## Project Status
 
