@@ -1,0 +1,20 @@
+<main>
+  <h1>QueryNest</h1>
+  <p>Your searchable knowledge hub.</p>
+
+  <button type="button" (click)="checkBackend()">
+    Check Backend Connection 
+  </button>
+
+  <p>{{ message() }}</p>
+
+  <hr>
+  <h2>Upload a spreadhseet</h2>
+
+  <label for="spreadsheet">Choose an Excel file: </label>
+  <input
+  id="spreadsheet",
+  type="file",
+  accept=".xlsx"
+  >
+</main>
