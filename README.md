@@ -54,3 +54,5 @@ The hub will retrieve the relevant records and present an answer with references
 ## Project Status
 
 Early development. Built incrementally as a hands-on project for learning Angular, Node.js, API development, and AI integration.
+
+![alt text](image.png)
